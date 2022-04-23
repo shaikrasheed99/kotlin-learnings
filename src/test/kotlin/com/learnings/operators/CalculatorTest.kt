@@ -12,4 +12,13 @@ class CalculatorTest {
 
         assertEquals(30, result)
     }
+
+    @Test
+    internal fun shouldBeAbleToSubtractTwoNumbers() {
+        val calculator = Calculator(20, 10)
+
+        val result = calculator.sub()
+
+        assertEquals(10, result)
+    }
 }
