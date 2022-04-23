@@ -1,7 +1,9 @@
 package com.learnings.operators
 
+import com.learnings.operators.exceptions.DivideByZeroException
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
 
 class CalculatorTest {
     @Test
@@ -38,5 +40,12 @@ class CalculatorTest {
         val result = calculator.divide()
 
         assertEquals(2, result)
+    }
+
+    @Test
+    internal fun shouldNotBeAbleToDivideWhenDenominatorIsZero() {
+        val calculator = Calculator(10, 0)
+
+        assertFailsWith<DivideByZeroException> { calculator.divide() }
     }
 }
