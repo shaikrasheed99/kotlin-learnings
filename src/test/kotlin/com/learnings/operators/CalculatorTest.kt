@@ -21,4 +21,13 @@ class CalculatorTest {
 
         assertEquals(10, result)
     }
+
+    @Test
+    internal fun shouldBeAbleToMultiplyTwoNumbers() {
+        val calculator = Calculator(10, 20)
+
+        val result = calculator.multiply()
+
+        assertEquals(200, result)
+    }
 }

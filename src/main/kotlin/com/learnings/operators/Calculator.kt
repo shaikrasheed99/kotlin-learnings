@@ -9,4 +9,8 @@ class Calculator(private val firstNumber: Int, private val secondNumber: Int) {
     fun sub(): Int {
         return firstNumber - secondNumber
     }
+
+    fun multiply(): Int {
+        return firstNumber * secondNumber
+    }
 }
