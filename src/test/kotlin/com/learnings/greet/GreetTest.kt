@@ -12,4 +12,13 @@ class GreetTest {
 
         assertEquals("Hello, ironman", greeting)
     }
+
+    @Test
+    internal fun shouldBeAbleToGreetAsHeyByName() {
+        val greet = Greet()
+
+        val greeting = greet.sayHey("batman")
+
+        assertEquals("Hey, batman", greeting)
+    }
 }
