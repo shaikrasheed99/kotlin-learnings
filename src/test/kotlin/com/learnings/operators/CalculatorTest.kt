@@ -30,4 +30,13 @@ class CalculatorTest {
 
         assertEquals(200, result)
     }
+
+    @Test
+    internal fun shouldBeAbleToDivideOneNumberWithAnother() {
+        val calculator = Calculator(10, 5)
+
+        val result = calculator.divide()
+
+        assertEquals(2, result)
+    }
 }

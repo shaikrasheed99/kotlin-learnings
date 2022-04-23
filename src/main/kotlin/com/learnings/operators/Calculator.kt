@@ -13,4 +13,8 @@ class Calculator(private val firstNumber: Int, private val secondNumber: Int) {
     fun multiply(): Int {
         return firstNumber * secondNumber
     }
+
+    fun divide(): Int {
+        return firstNumber / secondNumber
+    }
 }
