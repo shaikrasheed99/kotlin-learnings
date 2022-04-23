@@ -2,21 +2,21 @@ package com.learnings.operators
 
 import com.learnings.operators.exceptions.DivideByZeroException
 
-class Calculator(private val firstNumber: Int, private val secondNumber: Int) {
+class Calculator {
 
-    fun add(): Int {
+    fun add(firstNumber: Int, secondNumber: Int): Int {
         return firstNumber + secondNumber
     }
 
-    fun sub(): Int {
+    fun sub(firstNumber: Int, secondNumber: Int): Int {
         return firstNumber - secondNumber
     }
 
-    fun multiply(): Int {
+    fun multiply(firstNumber: Int, secondNumber: Int): Int {
         return firstNumber * secondNumber
     }
 
-    fun divide(): Int {
+    fun divide(firstNumber: Int, secondNumber: Int): Int {
         if (secondNumber == 0) throw DivideByZeroException()
         return firstNumber / secondNumber
     }
