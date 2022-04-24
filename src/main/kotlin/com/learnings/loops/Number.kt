@@ -1,6 +1,6 @@
 package com.learnings.loops
 
-class Numbers(private var start: Int, private val end: Int) {
+class Number(private var start: Int, private val end: Int) {
     private var range: IntRange = this.start..this.end
 
     fun naturalSum(): Int {

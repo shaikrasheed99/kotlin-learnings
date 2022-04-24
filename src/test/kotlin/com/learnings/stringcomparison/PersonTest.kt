@@ -1,4 +1,4 @@
-package com.learnings.stringcomparision
+package com.learnings.stringcomparison
 
 import org.junit.jupiter.api.Test
 import kotlin.test.assertTrue
