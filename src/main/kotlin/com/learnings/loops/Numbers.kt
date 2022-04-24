@@ -19,4 +19,12 @@ class Numbers(private var start: Int, private val end: Int) {
         }
         return totalSum
     }
+
+    fun oddSum(): Int {
+        var totalSum = 0
+        for (numbers in range step 2) {
+            totalSum += numbers
+        }
+        return totalSum
+    }
 }

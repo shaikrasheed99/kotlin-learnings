@@ -21,4 +21,13 @@ class NumbersTest {
 
         assertEquals(30, evenSum)
     }
+
+    @Test
+    internal fun shouldCalculateSumOfOddNumbersFromRange() {
+        val numbers = Numbers(1, 10)
+
+        val oddSum = numbers.oddSum()
+
+        assertEquals(25, oddSum)
+    }
 }
