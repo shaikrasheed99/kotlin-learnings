@@ -25,4 +25,11 @@ class ModifiedCalculatorTest {
 
         assertEquals(10, result)
     }
+
+    @Test
+    internal fun shouldCalculateMultiplicationOfTwoNumbers() {
+        val result = modifiedCalculator.multiply(20, 10)
+
+        assertEquals(200, result)
+    }
 }
