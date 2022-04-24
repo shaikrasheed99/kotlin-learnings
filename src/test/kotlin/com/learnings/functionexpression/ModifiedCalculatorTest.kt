@@ -18,4 +18,11 @@ class ModifiedCalculatorTest {
 
         assertEquals(30, result)
     }
+
+    @Test
+    internal fun shouldCalculateSubtractionOfTwoNumbers() {
+        val result = modifiedCalculator.subtract(20, 10)
+
+        assertEquals(10, result)
+    }
 }
