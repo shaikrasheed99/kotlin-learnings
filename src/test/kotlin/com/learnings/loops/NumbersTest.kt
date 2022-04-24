@@ -12,4 +12,13 @@ class NumbersTest {
 
         assertEquals(55, naturalSum)
     }
+
+    @Test
+    internal fun shouldCalculateSumOfEvenNumbersFromRange() {
+        val numbers = Numbers(1, 10)
+
+        val evenSum = numbers.evenSum()
+
+        assertEquals(30, evenSum)
+    }
 }
