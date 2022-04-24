@@ -23,4 +23,9 @@ class TripletTest {
     internal fun shouldGetIndexNumbersOfEveryNumberInsideTriplet() {
         assertEquals(1, triplet.list.indexOf(4))
     }
+
+    @Test
+    internal fun shouldGetNumbersFromTripletWhenIndexIsGiven() {
+        assertEquals(5, triplet.list[2])
+    }
 }
