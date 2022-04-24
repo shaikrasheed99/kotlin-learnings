@@ -21,4 +21,13 @@ class TrafficLightsTest {
 
         assertEquals("Start engine", action)
     }
+
+    @Test
+    internal fun shouldGetGoAsMessageWhenTrafficLightIsGreen() {
+        val trafficLights = TrafficLights("Green")
+
+        val action = trafficLights.action()
+
+        assertEquals("Go", action)
+    }
 }

@@ -5,6 +5,7 @@ class TrafficLights(private val lightColor: String) {
         return when (lightColor) {
             "Red" -> "Stop"
             "Yellow" -> "Start engine"
+            "Green" -> "Go"
             else -> "nothing"
         }
     }
