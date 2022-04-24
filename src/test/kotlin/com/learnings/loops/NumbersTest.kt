@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 
 class NumbersTest {
     @Test
-    internal fun shouldCalculateSumOfNaturalNumbersFromOneToTen() {
+    internal fun shouldCalculateSumOfNaturalNumbersFromRange() {
         val numbers = Numbers(1, 10)
 
         val naturalSum = numbers.naturalSum()
