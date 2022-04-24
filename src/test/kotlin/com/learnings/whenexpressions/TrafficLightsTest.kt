@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 
 class TrafficLightsTest {
     @Test
-    internal fun shouldStopTheVehicleWhenTrafficLightIsRed() {
+    internal fun shouldGetStopWhenTrafficLightIsRed() {
         val trafficLights = TrafficLights("Red")
 
         val action = trafficLights.action()
@@ -14,7 +14,7 @@ class TrafficLightsTest {
     }
 
     @Test
-    internal fun shouldStartTheVehicleWhenTrafficLightIsYellow() {
+    internal fun shouldGetStartEngineAsMessageWhenTrafficLightIsYellow() {
         val trafficLights = TrafficLights("Yellow")
 
         val action = trafficLights.action()
