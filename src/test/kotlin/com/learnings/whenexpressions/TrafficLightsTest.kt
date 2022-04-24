@@ -12,4 +12,13 @@ class TrafficLightsTest {
 
         assertEquals("Stop", action)
     }
+
+    @Test
+    internal fun shouldStartTheVehicleWhenTrafficLightIsYellow() {
+        val trafficLights = TrafficLights("Yellow")
+
+        val action = trafficLights.action()
+
+        assertEquals("Start engine", action)
+    }
 }
