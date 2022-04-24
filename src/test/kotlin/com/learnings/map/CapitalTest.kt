@@ -18,4 +18,11 @@ class CapitalTest {
 
         assertEquals("Delhi", capital.map["India"])
     }
+
+    @Test
+    internal fun shouldHaveMoscowAsCapitalOfRussia() {
+        capital.map["Russia"] = "Moscow"
+
+        assertEquals("Moscow", capital.map["Russia"])
+    }
 }
