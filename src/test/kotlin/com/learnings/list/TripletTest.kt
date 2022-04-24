@@ -18,4 +18,9 @@ class TripletTest {
     internal fun shouldHaveListOfThreeNumberInsideTriplet() {
         assertEquals(3, triplet.list.size)
     }
+
+    @Test
+    internal fun shouldGetIndexNumbersOfEveryNumberInsideTriplet() {
+        assertEquals(1, triplet.list.indexOf(4))
+    }
 }
