@@ -1,6 +1,7 @@
 package com.learnings.exceptions
 
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import kotlin.test.assertTrue
 
 class NaturalNumberTest {
@@ -11,5 +12,12 @@ class NaturalNumberTest {
         val result = naturalNumber.check(1)
 
         assertTrue(result)
+    }
+
+    @Test
+    internal fun shouldSayNumberIsNotNatural() {
+        val naturalNumber = NaturalNumber()
+
+        assertThrows<NumberIsNotNaturalException> { naturalNumber.check(-1) }
     }
 }
