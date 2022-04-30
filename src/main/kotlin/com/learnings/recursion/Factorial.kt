@@ -1,8 +1,10 @@
 package com.learnings.recursion
 
+import java.math.BigInteger
+
 class Factorial {
-    fun get(number: Int): Int {
-        if (number <= 0) return 1
-        return number * get(number - 1)
+    fun get(number: BigInteger): BigInteger {
+        if (number <= BigInteger("0")) return BigInteger("1")
+        return number * get(number - BigInteger("1"))
     }
 }
