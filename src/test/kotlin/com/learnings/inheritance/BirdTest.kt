@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 
 class BirdTest {
     @Test
-    internal fun shouldBirdBeAbleToAnimalWalkingBehavior() {
+    internal fun shouldBirdBeAbleToHaveAnimalWalkingBehavior() {
         val bird: Animal = Bird()
 
         val birdWalking = bird.walk()
