@@ -1,7 +1,7 @@
 package com.learnings.inheritance
 
 open class Animal {
-    fun walk(): String {
+    open fun walk(): String {
         return "Animal is walking!"
     }
 }
